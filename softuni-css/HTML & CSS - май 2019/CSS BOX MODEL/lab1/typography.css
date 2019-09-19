@@ -1,0 +1,44 @@
+/* reset.css */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font: 16px/1.5 Helvetica, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body, input, textarea, option, select, table, form {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvtica, sans-serif;
+    line-height: 1.1;
+    padding: 0;
+    margin: 0 0 0.5em 0;
+}
+
+h1 { font-size: 3.0em; font-weight: normal;}
+h2 { font-size: 2.12em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.9em; }
+h5 { font-size: 1.4em; }
+h6 { font-size: 1.2em; }
+
+p {
+    padding-bottom: 1em;
+}
+
+.ampersand {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #000;
+}
