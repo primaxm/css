@@ -1,0 +1,102 @@
+.card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-list::before,
+.card-list::after {
+  display: block;
+  content: "";
+  order: 1000;
+}
+
+.card-list::before,
+.card-list::after,
+.card {
+  flex: 0 0 25%;
+}
+
+.card {
+  border: 1px solid #000000;
+  border-radius: 0.3em;
+  overflow: hidden;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3em;
+  margin: 0.5em;
+}
+
+.card-media::before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.card-media::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #000000;
+  border-radius: 0.3em;
+}
+
+.card-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-header {
+  padding: 0.5em 1.5em;
+  line-height: 1.1;
+  padding-top: 1em;
+}
+
+.card-content {
+  padding: 0.5em 1.5em;
+  padding-bottom: 2em;
+  flex-grow: 1;
+}
+
+.card-footer {
+  border-top: 1px solid #000000;
+}
+
+.card-footer ul {
+  display: flex;
+}
+
+.card-footer li {
+  flex: 1 1 auto;
+  list-style: none outside;
+}
+
+.card-footer li:first-child {
+  border-right: 1px solid #000000;
+}
+
+.card-footer a {
+  display: block;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.card-footer a:hover {
+  background: #000000;
+  color: #ffffff;
+}
